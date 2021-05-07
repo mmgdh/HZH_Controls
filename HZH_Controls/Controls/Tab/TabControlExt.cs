@@ -342,7 +342,9 @@ namespace HZH_Controls.Controls
             {
                 borderPen = new Pen(_headSelectedBorderColor); // TabPage 选中后的 TabPage 头部边框色
             }
+            graph.SmoothingMode = SmoothingMode.AntiAlias;//抗锯齿
             graph.DrawPath(borderPen, path);
+
             borderPen.Dispose();
         }
 
