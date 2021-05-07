@@ -118,6 +118,14 @@ namespace HZH_Controls.Controls
             get { return _TitleFont; }
             set { _TitleFont = value; Refresh(); }
         }
+        private Color _PanelBorderColor = Color.FromArgb(201, 204, 209);
+        [DefaultValue(typeof(Color), "201, 204, 209")]
+        [Description("Panel的线条色")]
+        public Color PanelBorderColor
+        {
+            get { return _PanelBorderColor; }
+            set { _PanelBorderColor = value; Refresh(); }
+        }
 
         #endregion
 
@@ -205,7 +213,7 @@ namespace HZH_Controls.Controls
             }
 
 
-            e.Graphics.DrawPath(new Pen(Color.FromArgb(201, 204, 209), 1), pathBounds);
+            e.Graphics.DrawPath(new Pen(_PanelBorderColor, 1), pathBounds);//Color.FromArgb(201, 204, 209)
             // e.Graphics.DrawPath(new Pen(Color.Red, 1), pathBounds);
         }
 

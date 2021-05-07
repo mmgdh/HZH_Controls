@@ -8,12 +8,12 @@ namespace HZH_Controls.Controls
 
     public class ToolStripColorTable
     {
-        private static readonly Color _base = Color.FromArgb(49, 56, 82);
-        private static readonly Color _border = Color.FromArgb(49, 56, 82);
-        private static readonly Color _backNormal = Color.FromArgb(49, 56, 82);
-        private static readonly Color _backHover = Color.FromArgb(29, 33, 49);
-        private static readonly Color _backPressed = Color.FromArgb(29, 33, 49);
-        private static readonly Color _fore = Color.FromArgb(175, 193, 225);
+        private static readonly Color _base = Color.Green;
+        private static readonly Color _border = Color.FromArgb(117, 164, 249);
+        private static readonly Color _backNormal = Color.White;
+        private static readonly Color _backHover = Color.FromArgb(234, 243, 254);
+        private static readonly Color _backPressed = Color.FromArgb(234, 243, 254);
+        private static readonly Color _fore = Color.Black;
         private static readonly Color _dropDownImageBack = Color.FromArgb(49, 56, 82);
         private static readonly Color _dropDownImageSeparator = Color.FromArgb(49, 56, 82);
 

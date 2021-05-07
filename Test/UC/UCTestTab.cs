@@ -273,5 +273,10 @@ namespace Test.UC
             //    base.OnValueChanged(eventargs);
             //}
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            myMenu1.Show(button1, new Point(0,button1.Height));
+        }
     }
 }

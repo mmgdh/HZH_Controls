@@ -66,10 +66,10 @@ namespace HZH_Controls.Controls
                 RenderHelper.RenderBackgroundInternal(
                     g,
                     bounds,
-                    ColorTable.Base,
+                    Color.White ,
                     ColorTable.Border,
-                    RoundStyle.None,
-                    0,
+                    RoundStyle.All,
+                    2,
                     .35f,
                     false,
                     false);
@@ -80,7 +80,7 @@ namespace HZH_Controls.Controls
             }
         }
 
-        protected override void OnRenderImageMargin(
+        protected  void OnRenderImageMargin(//override
             ToolStripRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
@@ -223,10 +223,11 @@ namespace HZH_Controls.Controls
                     using (GraphicsPath path =
                         GraphicsPathHelper.CreatePath(bounds, 8, RoundStyle.All, true))
                     {
-                        using (Pen pen = new Pen(ColorTable.DropDownImageSeparator))
+                        using (Pen pen = new Pen(ColorTable.Border))
                         {
-                            path.Widen(pen);
+                            //path.Widen(pen);
                             g.DrawPath(pen, path);
+                            g.SmoothingMode = SmoothingMode.AntiAlias;
                         }
                     }
                 }
@@ -348,7 +349,7 @@ namespace HZH_Controls.Controls
             }
         }
 
-        protected override void OnRenderItemImage(
+        protected  void OnRenderItemImage( //override
             ToolStripItemImageRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
@@ -479,7 +480,7 @@ namespace HZH_Controls.Controls
             }
         }
 
-        protected override void OnRenderArrow(
+        protected  void OnRenderArrow(//override
             ToolStripArrowRenderEventArgs e)
         {
             if (e.Item.Enabled)
@@ -512,7 +513,7 @@ namespace HZH_Controls.Controls
             base.OnRenderArrow(e);
         }
 
-        protected override void OnRenderSeparator(
+        protected  void OnRenderSeparator(//override
             ToolStripSeparatorRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;

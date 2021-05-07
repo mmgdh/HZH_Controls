@@ -22,6 +22,7 @@ namespace Test
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            ToolStripManager.Renderer = new HZH_Controls.Controls.ProfessionalToolStripRendererEx();
             try
             {
                 ControlHelper.FreezeControl(this, true);

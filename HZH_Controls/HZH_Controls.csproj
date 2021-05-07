@@ -137,6 +137,9 @@
     <Compile Include="Controls\GraphicalOverlay\GraphicalOverlayComponent.designer.cs">
       <DependentUpon>GraphicalOverlayComponent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Menu\MyMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\NavigationMenu\NavigationMenuItem.cs" />
     <Compile Include="Controls\NavigationMenu\NavigationMenuItemBase.cs" />
     <Compile Include="Controls\NavigationMenu\NavigationMenuItemExt.cs" />
@@ -195,6 +198,7 @@
     <Compile Include="Controls\ToolStripRendererEx\ControlPaintEx.cs" />
     <Compile Include="Controls\ToolStripRendererEx\GraphicsPathHelper.cs" />
     <Compile Include="Controls\ToolStripRendererEx\InterpolationModeGraphics.cs" />
+    <Compile Include="Controls\ToolStripRendererEx\MyRender.cs" />
     <Compile Include="Controls\ToolStripRendererEx\ProfessionalToolStripRendererEx.cs" />
     <Compile Include="Controls\ToolStripRendererEx\RegionHelper.cs" />
     <Compile Include="Controls\ToolStripRendererEx\RenderHelper.cs" />
@@ -818,6 +822,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\List\UCListViewItem.resx">
       <DependentUpon>UCListViewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Menu\MyMenu.resx">
+      <DependentUpon>MyMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Page\UCPagerControl.resx">
       <DependentUpon>UCPagerControl.cs</DependentUpon>

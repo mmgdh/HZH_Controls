@@ -28,6 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cardPanel1 = new HZH_Controls.Controls.CardPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.myDatGrid1 = new HZH_Controls.Controls.MyDatGrid();
+            this.Column1 = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlExt1 = new HZH_Controls.Controls.TabControlExt();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -35,120 +43,42 @@
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.cardPanel1 = new HZH_Controls.Controls.CardPanel();
-            this.myDatGrid1 = new HZH_Controls.Controls.MyDatGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControlExt1.SuspendLayout();
+            this.myMenu1 = new HZH_Controls.Controls.Menu.MyMenu();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.cardPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.myDatGrid1)).BeginInit();
+            this.tabControlExt1.SuspendLayout();
+            this.myMenu1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabControlExt1
-            // 
-            this.tabControlExt1.BorderColor = System.Drawing.Color.White;
-            this.tabControlExt1.CloseBtnColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(51)))));
-            this.tabControlExt1.Controls.Add(this.tabPage5);
-            this.tabControlExt1.Controls.Add(this.tabPage6);
-            this.tabControlExt1.Controls.Add(this.tabPage7);
-            this.tabControlExt1.Controls.Add(this.tabPage8);
-            this.tabControlExt1.Controls.Add(this.tabPage9);
-            this.tabControlExt1.Controls.Add(this.tabPage10);
-            this.tabControlExt1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControlExt1.HeadSelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(243)))), ((int)(((byte)(254)))));
-            this.tabControlExt1.HeadSelectedBorderColor = System.Drawing.Color.LightBlue;
-            this.tabControlExt1.HeadSelectedFontColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(83)))), ((int)(((byte)(170)))));
-            this.tabControlExt1.IsShowCloseBtn = true;
-            this.tabControlExt1.ItemSize = new System.Drawing.Size(150, 45);
-            this.tabControlExt1.Location = new System.Drawing.Point(0, 0);
-            this.tabControlExt1.Name = "tabControlExt1";
-            this.tabControlExt1.Padding = new System.Drawing.Point(30, 3);
-            this.tabControlExt1.SelectedIndex = 0;
-            this.tabControlExt1.Size = new System.Drawing.Size(974, 56);
-            this.tabControlExt1.TabIndex = 1;
-            this.tabControlExt1.Text = "    ";
-            this.tabControlExt1.UncloseTabIndexs = new int[] {
-        0,
-        1};
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 49);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(966, 3);
-            this.tabPage5.TabIndex = 14;
-            this.tabPage5.Text = "患者详情";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 49);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(966, 3);
-            this.tabPage6.TabIndex = 15;
-            this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 49);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(966, 3);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 49);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(966, 3);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 49);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(966, 3);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "tabPage9";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Location = new System.Drawing.Point(4, 49);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(966, 3);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "tabPage10";
-            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // cardPanel1
             // 
             this.cardPanel1.BorderRadiusShow = false;
             this.cardPanel1.BorderUpDown = false;
+            this.cardPanel1.Controls.Add(this.button1);
             this.cardPanel1.Controls.Add(this.myDatGrid1);
             this.cardPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cardPanel1.LineCount = 0;
-            this.cardPanel1.Location = new System.Drawing.Point(0, 56);
+            this.cardPanel1.Location = new System.Drawing.Point(0, 269);
             this.cardPanel1.Name = "cardPanel1";
             this.cardPanel1.Padding = new System.Windows.Forms.Padding(0, 50, 0, 0);
-            this.cardPanel1.Size = new System.Drawing.Size(974, 508);
+            this.cardPanel1.Size = new System.Drawing.Size(974, 295);
             this.cardPanel1.TabIndex = 2;
             this.cardPanel1.Title = "adsasd";
             this.cardPanel1.TitleFont = new System.Drawing.Font("黑体", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cardPanel1.TitleFontColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(83)))), ((int)(((byte)(170)))));
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(132, 373);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // myDatGrid1
             // 
@@ -206,6 +136,128 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 150;
             // 
+            // tabControlExt1
+            // 
+            this.tabControlExt1.BorderColor = System.Drawing.Color.Black;
+            this.tabControlExt1.CloseBtnColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(51)))));
+            this.tabControlExt1.Controls.Add(this.tabPage5);
+            this.tabControlExt1.Controls.Add(this.tabPage6);
+            this.tabControlExt1.Controls.Add(this.tabPage7);
+            this.tabControlExt1.Controls.Add(this.tabPage8);
+            this.tabControlExt1.Controls.Add(this.tabPage9);
+            this.tabControlExt1.Controls.Add(this.tabPage10);
+            this.tabControlExt1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabControlExt1.HeaderBackColor = System.Drawing.Color.Black;
+            this.tabControlExt1.HeadSelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(243)))), ((int)(((byte)(254)))));
+            this.tabControlExt1.HeadSelectedBorderColor = System.Drawing.Color.LightBlue;
+            this.tabControlExt1.HeadSelectedFontColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(83)))), ((int)(((byte)(170)))));
+            this.tabControlExt1.IsShowCloseBtn = true;
+            this.tabControlExt1.ItemSize = new System.Drawing.Size(250, 70);
+            this.tabControlExt1.Location = new System.Drawing.Point(0, 0);
+            this.tabControlExt1.Name = "tabControlExt1";
+            this.tabControlExt1.Padding = new System.Drawing.Point(50, 10);
+            this.tabControlExt1.SelectedIndex = 0;
+            this.tabControlExt1.Size = new System.Drawing.Size(974, 269);
+            this.tabControlExt1.TabIndex = 1;
+            this.tabControlExt1.Text = "    ";
+            this.tabControlExt1.UncloseTabIndexs = new int[] {
+        0,
+        1};
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 74);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(966, 191);
+            this.tabPage5.TabIndex = 14;
+            this.tabPage5.Text = "患者详情";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 74);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(966, 191);
+            this.tabPage6.TabIndex = 15;
+            this.tabPage6.Text = "tabPage6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 74);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(966, 191);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 74);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(966, 191);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 74);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(966, 191);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "tabPage9";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 74);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(966, 191);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "tabPage10";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // myMenu1
+            // 
+            this.myMenu1.AllowMerge = false;
+            this.myMenu1.DropShadowEnabled = false;
+            this.myMenu1.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.myMenu1.ImageScalingSize = new System.Drawing.Size(0, 0);
+            this.myMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.myMenu1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.myMenu1.Name = "myMenu1";
+            this.myMenu1.ShowImageMargin = false;
+            this.myMenu1.ShowItemToolTips = false;
+            this.myMenu1.Size = new System.Drawing.Size(275, 112);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(274, 36);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(274, 36);
+            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(274, 36);
+            this.toolStripMenuItem3.Text = "toolStripMenuItem3";
+            // 
             // UCTestTab
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -214,9 +266,10 @@
             this.Controls.Add(this.tabControlExt1);
             this.Name = "UCTestTab";
             this.Size = new System.Drawing.Size(974, 564);
-            this.tabControlExt1.ResumeLayout(false);
             this.cardPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.myDatGrid1)).EndInit();
+            this.tabControlExt1.ResumeLayout(false);
+            this.myMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -237,5 +290,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Button button1;
+        private HZH_Controls.Controls.Menu.MyMenu myMenu1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }

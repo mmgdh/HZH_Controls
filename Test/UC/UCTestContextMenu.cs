@@ -18,5 +18,10 @@ namespace Test.UC
             ToolStripManager.Renderer = new HZH_Controls.Controls.ProfessionalToolStripRendererEx();
 
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(button1, new Point(0, button1.Height));
+        }
     }
 }
